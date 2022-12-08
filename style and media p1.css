@@ -1,0 +1,240 @@
+.img_position img {
+  background-color: #fff;
+}
+
+body {
+  /* background-image: url(http://res2.weblium.site/res/5ebd017955744e0022918f1b/5ebd5f576ecbd30022d9da39_optimized_1684_c1560x587-91x25.webp); */
+  background-image: url(http://res2.weblium.site/res/5ebd017955744e0022918f1b/5ec29306313dee0021e8fd3d_optimized_1920.webp);
+  background-size: 2000px;
+  background-repeat: no-repeat;
+  min-zoom: 100px;
+}
+
+.first_page {
+  height: 800px;
+  border-bottom: 5px solid #000;
+}
+
+/* МЕНЮ САЙТА */
+
+.my_logo {
+  z-index: 100;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  min-width: 500px;
+}
+
+.nav {
+  margin-top: 40px;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 25px;
+  position: relative;
+}
+
+.nav ul li a {
+  color: #000;
+  transition: all 0.3s ease-out;
+}
+
+.nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background: rgb(244, 198, 14);
+  bottom: -5px;
+  transition: all 0.3s ease-out;
+}
+.nav ul li a:hover {
+  color: rgb(244, 198, 14);
+}
+
+.nav ul li a:hover:before {
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+}
+
+.logo1 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 100;
+  position: absolute;
+}
+
+.logo2 {
+  color: #f6c43d;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 100;
+  position: absolute;
+  left: 65px;
+}
+
+/* Хедер Інформація */
+
+.header_info1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  margin-top: 225px;
+  margin-left: 300px;
+  font-weight: 700;
+  min-width: 360px;
+}
+
+.blue_text {
+  color: rgb(14, 8, 200);
+  font-weight: bold;
+}
+
+.header_info2 {
+  font-size: 140px;
+  margin-top: 90px;
+  margin-left: 60px;
+  color: #f6c43d;
+  font-weight: 700;
+  max-width: 550px;
+}
+
+/* media menu */
+
+.media_button {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  display: none;
+  z-index: 101;
+}
+.media_button button {
+  border: none;
+  background-color: transparent;
+}
+
+.media_button button:hover {
+  cursor: pointer;
+}
+
+.media_button div {
+  width: 35px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  margin: 6px 0;
+}
+
+.open_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: none;
+  z-index: 2;
+}
+
+.box-media-menu {
+  display: flex;
+  justify-content: center;
+  margin: 200px auto;
+}
+
+.box-media-menu ul li {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.box-media-menu ul li a {
+  color: #000;
+  font-size: 25px;
+  transition: all 0.2s ease;
+}
+
+.box-media-menu ul li a:hover {
+  color: rgb(244, 198, 14);
+}
+
+.close_menu button {
+  display: none;
+}
+
+/* ------media------ */
+
+@media screen and (max-width: 1080px) {
+  .nav {
+    display: none;
+  }
+  .media_button {
+    display: block;
+  }
+
+  .close_menu {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+  }
+
+  .close_menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+  }
+
+  .close_menu button:hover {
+    cursor: pointer;
+  }
+  .close_menu button:hover .close {
+    color: #222;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header_info1 {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .header_info2 {
+    max-width: 200px;
+    margin-left: 10px;
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .header_info1 {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .header_info2 {
+    margin-top: 150px;
+    font-size: 80px;
+    margin-top: 180px;
+  }
+
+  .logo1 {
+    left: -40px;
+  }
+  .logo2 {
+    left: 26px;
+  }
+}

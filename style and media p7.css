@@ -1,0 +1,285 @@
+.footer_section {
+  background-color: #222;
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0px;
+}
+
+.fotter_nav {
+  position: absolute;
+  right: 200px;
+  top: 80px;
+}
+
+.fotter_nav ul li {
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+.fotter_nav ul li a {
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-out;
+  font-weight: 700;
+}
+
+.fotter_nav ul li a:hover {
+  color: rgb(244, 198, 14);
+}
+
+.logo_fot {
+  margin-left: 200px;
+  margin-top: 70px;
+}
+
+.logo_f1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo_f2 {
+  color: #f6c43d;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo_fot::before {
+  content: "";
+  position: absolute;
+  width: 1100px;
+  height: 1px;
+  background-color: #817a7a;
+  bottom: -25px;
+}
+
+.info_about_createra {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+}
+
+.created_dy {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.name {
+  margin-left: 965px;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 23px;
+}
+
+/* ----------------- */
+.Ukraine {
+  font-size: 30px;
+  margin-top: -4px;
+  margin-right: 120px;
+  animation: color 2s linear infinite alternate;
+}
+
+@keyframes color {
+  0% {
+    color: blue;
+    text-shadow: 2px 0px 100px blue;
+  }
+
+  50% {
+    color: blue;
+    text-shadow: 2px 0px 20px blue;
+  }
+
+  75% {
+    color: yellow;
+    text-shadow: 2px 0px 20px yellow;
+  }
+
+  100% {
+    color: yellow;
+    text-shadow: 2px 0px 100px yellow;
+  }
+}
+
+/* ---media--- */
+
+@media only screen and (max-width: 1605px) {
+  .Ukraine {
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .Ukraine {
+    position: absolute;
+    right: -228px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo_fot::before {
+    width: 570px;
+  }
+
+  .name {
+    margin-left: 440px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .logo_fot::before {
+    width: 577px;
+  }
+
+  .Ukraine {
+    margin-right: 276px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo_fot::before {
+    width: 370px;
+  }
+
+  .logo_f2,
+  .logo_f1 {
+    font-size: 20px;
+  }
+
+  .Ukraine {
+    margin-top: -12px;
+    font-size: 25px;
+  }
+
+  .name {
+    margin-left: 235px;
+    margin-top: -3px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .Ukraine {
+    margin-right: 5px;
+  }
+  .logo_fot::before {
+    width: 417px;
+  }
+
+  .name {
+    margin-left: 281px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .logo_fot::before {
+    margin-left: -140px;
+    width: 665px;
+    top: 117px;
+  }
+
+  .created_dy {
+    left: -141px;
+  }
+
+  .name {
+    margin-left: 390px;
+  }
+  .Ukraine {
+    position: absolute;
+    right: -160px;
+  }
+  .logo_f1 {
+    position: absolute;
+    left: 61px;
+  }
+
+  .logo_f2 {
+    position: absolute;
+    left: 105px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo_fot::before {
+    margin-left: -193px;
+    width: 441px;
+  }
+
+  .logo_f1 {
+    left: 7px;
+  }
+
+  .logo_f2 {
+    left: 52px;
+  }
+
+  .Ukraine {
+    right: -213px;
+  }
+  .created_dy {
+    left: -191px;
+  }
+
+  .name {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .name {
+    margin-left: 72px;
+  }
+  .logo_fot::before {
+    width: 400px;
+  }
+  .Ukraine {
+    right: -197px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .name {
+    margin-left: 49px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .name {
+    margin-left: 36px;
+  }
+  .logo_fot::before {
+    width: 360px;
+  }
+
+  .Ukraine {
+    right: -200px;
+  }
+}
+/* @media only screen and (max-width: 380px) {
+  .logo_fot::before {
+    width: 360px;
+  }
+
+  .Ukraine {
+    right: -200px;
+  }
+} */
+
+@media only screen and (max-width: 360px) {
+  .name {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .name {
+    margin-left: -20px;
+  }
+}
