@@ -20,7 +20,7 @@
   font-weight: 600;
   max-width: 700px;
   text-align: center;
-  margin-left: 400px;
+  margin: 0 auto;
 }
 
 /* 2)card */
@@ -243,13 +243,6 @@
   .price_box {
     height: 2500px;
   }
-  .text_pb .h2_pb {
-    margin-left: 50px;
-  }
-
-  .text_pb .under_h2pb {
-    margin-left: 150px;
-  }
 
   .card_pb2 {
     top: 950px;
@@ -296,14 +289,6 @@
   .card_pb3 {
     left: 105px;
   }
-
-  .text_pb .under_h2pb {
-    margin-left: 50px;
-  }
-
-  .text_pb .h2_pb {
-    margin-left: 5px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -318,9 +303,6 @@
     left: 0;
   }
 
-  .text_pb .under_h2pb {
-    margin-left: 10px;
-  }
   .price_box {
     margin-top: 200px;
   }
@@ -340,12 +322,16 @@
     width: 275px;
   }
 
+  .card_pb2 {
+    height: 632px;
+  }
+
   .button_c1,
   .button_c2,
   .button_c3 {
-    padding: 10px 10px;
-    margin-left: 65px;
-    margin-top: 50px;
+    display: block;
+    padding: 10px 20px;
+    margin: 80px auto;
   }
 
   .card_pb3 {
