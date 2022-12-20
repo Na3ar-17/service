@@ -220,6 +220,9 @@ body {
 }
 
 @media screen and (max-width: 433px) {
+  body {
+    background-image: none;
+  }
   .header_info1 {
     margin-left: 10px;
     font-size: 25px;
